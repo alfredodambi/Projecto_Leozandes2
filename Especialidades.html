@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SISTEMA CLINICO</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="popper.js/dist/umd/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+</head>
+<body>
+
+<!-- Navigation/ Navegação -->
+
+<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-size: 25pt;" >Sistema<b style="color: white">Clinico</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Pagina Inicial</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="Especialidades.html">Especialidades</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Servicos.html">Serviços</a>
+                </li>
+
+                <!--
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Especialidades.html" data-toggle="dropdown">Cadastrar</a>
+                    <div class="dropdown-menu bg-primary" >
+                        <a class="dropdown-item" href="CadastrarMedico.php" >Medicos</a>
+                        <a class="dropdown-item" href="CadastrarPaciente.php">Pacientes</a>
+                        <a class="dropdown-item" href="CadastrarConsulta.php">Consultas</a>
+                    </div>
+                </li>-->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Lista</a>
+                    <div class="dropdown-menu bg-primary" >
+                        <a class="dropdown-item" href="Lista_Medico.php" >Medicos</a>
+                        <a class="dropdown-item" href="Lista_Paciente.php">Pacientes</a>
+                        <a class="dropdown-item" href="Lista_Consulta.php">Consultas</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Paciente e Familia</a>
+                    <div class="dropdown-menu bg-primary" >
+                        <a class="dropdown-item" href="#" >Resultado dos Exames</a>
+                        <a class="dropdown-item" href="#">Orientação Geral e Segurança do Paciente</a>
+                        <a class="dropdown-item" href="#">Mensagem Para Pacientes Internados</a>
+                    </div>
+                </li>
+
+                <!--Dropdown do item do menu
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" >Outros</a>
+
+                    <div class="dropdown-menu bg-primary" >
+                        <a class="dropdown-item" href="pesquisar.html" >Pesquisar Medico</a>
+                        <a class="dropdown-item" href="pesquisarPaciente.html">Pesquisar Paciente</a>
+                        <a class="dropdown-item" href="eliminarMedico.php">Eliminar Medico</a>
+                        <a class="dropdown-item" href="eliminarPaciente.php">Eliminar Paciente</a>
+                        <a class="dropdown-item" href="#">Youtube</a>
+                    </div>
+                </li>-->
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!--- Image Slider/ slides -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <!-- Criando as setas que permitem trocar a imagem do slide-->
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <!--Criando uma div para carregar as imagens dos sliders-->
+    <div class="carousel-inner">
+        <!--Primeira imagem-->
+        <div class="carousel-item active">
+            <img src="img/hospital/slide4.jpg">
+            <div class="carousel-caption">
+                <!--Conteudo por cima da imagem-->
+                <h1 class="display-2">Ajuda Online</h1>
+                <h3>Tratamento de qualidade</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">Saber mais</button>
+                <button type="button" class="btn btn-primary btn-lg">Começar</button>
+            </div>
+        </div>
+
+        <!--Segunda imagem-->
+        <div class="carousel-item">
+            <img src="img/hospital/slide2.jpg">
+        </div>
+
+        <!--Terceira imagem-->
+        <div class="carousel-item">
+            <img src="img/hospital/slide3.jpg">
+        </div>
+    </div>
+
+</div>
+
+<!--- Jumbotron -->
+
+<!--- Welcome Section / seção -->
+<div class="container-fluid padding">
+    <!--Criando um conteudos centralizados-->
+    <div class="row Welcome text-center">
+        <!--Titulo-->
+        <div class="col-12 bg-primary">
+            <h1 class="display-4">Especialidades</h1>
+        </div>
+        <hr>
+        <!--Paragrafos-->
+    </div>
+</div>
+
+
+<!--- Three Column Section / TrÊs colunas da seção-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12  col-sm-6 col-md-4">
+            <i class="fas fa-code"></i>
+            <h3>ANATOMIA PATOLÓGICA</h3>
+        </div>
+
+        <div class="col-xs-12  col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+            <h3>ANESTESIOLOGIA</h3>
+        </div>
+
+
+        <div class="col-sm-12 col-md-4">
+            <i class="fab fa-css3"></i>
+            <h3>CARDIOLOGIA</h3>
+        </div>
+
+        <div class="col-xs-12  col-sm-6 col-md-4">
+            <i class="fas fa-code"></i>
+            <h3>CIRURGIA GERAL</h3>
+        </div>
+
+        <div class="col-xs-12  col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+            <h3>DERMATOLOGIA</h3>
+        </div>
+
+
+        <div class="col-sm-12 col-md-4">
+            <i class="fab fa-css3"></i>
+            <h3>ENDOCRINOLOGIA</h3>
+        </div>
+
+        <div class="col-xs-12  col-sm-6 col-md-4">
+            <i class="fas fa-code"></i>
+            <h3>GASTROENTEROLOGIA</h3>
+        </div>
+
+        <div class="col-xs-12  col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+            <h3>NEUROLOGIA</h3>
+        </div>
+
+
+        <div class="col-sm-12 col-md-4">
+            <i class="fab fa-css3"></i>
+            <h3>NUTRIÇÃO</h3>
+        </div>
+
+        <div class="col-xs-12  col-sm-6 col-md-4">
+            <i class="fas fa-code"></i>
+            <h3>OFTALMOLOGIA</h3>
+        </div>
+
+        <div class="col-xs-12  col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+            <h3>ONCOLOGIA</h3>
+        </div>
+
+
+        <div class="col-sm-12 col-md-4">
+            <i class="fab fa-css3"></i>
+            <h3>ORTOPEDIA</h3>
+        </div>
+
+
+
+
+
+
+    </div>
+    <hr class="my-4">
+
+</div>
+
+
+<!--- Two Column Section / Duas colunas da seção-->
+
+<!--- Fixed background / Backgorund Fixo-->
+<figure>
+    <!--Tornando a imagem fixa-->
+    <div class="fixed-wrap">
+        <div id="fixed">
+        </div>
+    </div>
+</figure>
+
+<!--- Emoji Section / emojis da seção -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">Clique para se divertir</button>
+<div id="emoji" class="collapse">
+    <!--Centralizando os gifs ou emojis-->
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="img/gif/panda.gif">
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="img/gif/poo.gif">
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="img/gif/unicorn.gif">
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="img/gif/chicken.gif">
+            </div>
+
+
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<!--- Meet the team / Conhecendo a equipa -->
+</div>
+
+<!--- Cards /Cartões -->
+
+<!--- Two Column Section / Duas colunas de seção -->
+
+<!--- Connect / Conexão -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12 bg-primary" style="color: white;">
+            <h2>Social</h2>
+        </div>
+
+        <!--Imagens das redes sociais-->
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </div>
+</div>
+
+<!--- Footer / Rodape -->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <!--Coluna a esquerda-->
+            <div class="col-md-4">
+                <a class="navbar-brand" href="#" style="font-size: 25pt;" >Sistema<b style="color: white">Clinico</b></a>
+                <hr class="light">
+                <p>telefone: 932897973</p>
+                <p>email: alfredodambi14@gmail.com</p>
+                <p>localização:Benfica</p>
+            </div>
+
+            <!--Coluna central-->
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Horas de Trabalho</h5>
+                <hr class="light">
+                <p>Segunda-Sexta: 8:00 - 17:00</p>
+                <p>Sabado: 09:00 - 17:00</p>
+                <p>Domingo: 09:00 - 15:00</p>
+            </div>
+
+            <!--Coluna a direita-->
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Area de Serviço</h5>
+                <hr class="light">
+                <p>Luanda</p>
+                <p>Benguela</p>
+                <p>Huambo</p>
+                <p>Malanje</p>
+            </div>
+
+            <!--Coluna abaixo final-->
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy; OSHIKURU - DEMON SAMURAI(ALFREDO P.A. DAMBI)</h5>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
